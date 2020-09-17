@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.screen{
+    height: 100vh;
+    /* width: 100vh; */
+    /* background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(img/chuttersnap-CATZGyxjzHk-unsplash.jpg); */
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(img/background2.jpg);
+    object-fit: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100% 100%;
+}
+#road, .sideBar{
+    box-shadow: #d4edda 0 0 10px 5px;
+}
+
+.car {
+    width: 80px;
+    height: 70px;
+    background-size: 100% 70px;
+    position: absolute;
+}
+
+.c1 {
+    background-image: url(img/c1.png);
+}
+
+.c2 {
+    background-image: url(img/c2.png);
+}
+
+.c3 {
+    background-image: url(img/c3.png);
+}
+
+.c4 {
+    background-image: url(img/c4.png);
+}
+
+.c5 {
+    background-image: url(img/c5.png);
+}
+
+.c6 {
+    background-image: url(img/c6.png);
+}
+
+.c7 {
+    background-image: url(img/c7.png);
+}
+
+.c8 {
+    background-image: url(img/c8.png);
+}
+
+.c9 {
+    background-image: url(img/c9.png);
+}
+
+.c10 {
+    background-image: url(img/c10.png);
+}
+
+.c11 {
+    background-image: url(img/c11.png);
+}
+
+.c12 {
+    background-image: url(img/c12.png);
+}
+
+.c13 {
+    background-image: url(img/c13.png);
+}
+
+.c14 {
+    background-image: url(img/c14.png);
+}
+
+.c15 {
+    background-image: url(img/c15.png);
+}
+
+#frog {
+    height: 65px;
+    width: 65px;
+    background-image: url(img/Chicken_dances.gif);
+    background-size: 65px 65px;
+    position: absolute;
+    top: 585px;
+    left: 50%;
+    z-index: 1;
+}
+
+@media (min-width:1200px) {
+    #road {
+        float: right;
+    }
+}
+
+#road {
+    width: 900px;
+    height: 650px;
+    background-image: url(img/road.png);
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#end {
+    width: 100%;
+    height: 65px;
+    background: url(img/grass4-2.png), limegreen;
+    object-fit: cover;
+    background-position: center;
+}
+
+#starting {
+    width: 100%;
+    height: 65px;
+    background-image: url(img/starting.png);
+    position: absolute;
+    bottom: 0;
+}
+
+#cook {
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/Cook_with_weapons.gif);
+    width: 100px;
+    height: 120px;
+    background-size: 100px 120px;
+    z-index: 1;
+    animation: cookAni 5s ease-in-out 2s infinite alternate;
+}
+@keyframes cookAni {
+    0%  {left: 0;bottom: 0;}
+    25% {left: 100px;bottom: 0;}
+    50% {left: 0;bottom: 0;}
+    75% {left: 180px;bottom: 0;}
+    100%{left: 0;bottom: 0;}
+  }
+
+#wolf {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(img/Wolf_2.gif);
+    width: 60px;
+    height: 120px;
+    background-size: 60px 120px;
+    z-index: 1;
+    animation: wolfAni 8s ease-in-out 2s infinite alternate;
+}
+@keyframes wolfAni {
+    0%  {right: 0;bottom: 0;}
+    25% {right: 100px;bottom: 0;}
+    50% {right: 0;bottom: 0;}
+    75% {right: 180px;bottom: 0;}
+    100%{right: 0;bottom: 0;}
+  }
+
+#gameName{
+    font-size: 24px;
+    font-weight: bolder;
+    color: goldenrod;
+}
+
+.modal-dialog.rule {
+    height: 500px;
+}
+
+.modal-dialog.rule div {
+    width: 100%;
+}
+
+.modal-content {
+    height: 100%;
+}
+
+.step_1Img img {
+    width: 100%;
+    object-fit: contain;
+}
+.modal-body .chicken{
+    width: 120px;
+    height: 120px;
+}
+.step_1Img{
+    position: relative;
+}
+#upImg{
+    position: absolute;
+    left: 60px;
+    top: -45px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+#downImg{
+    position: absolute;
+    left: 60px;
+    bottom: -45px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+#leftImg{
+    position: absolute;
+    left: -20px;
+    top: 45px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+#rightImg{
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+/* .step_2Img{
+    position: relative;
+} */
+.step_2Img .chicken{
+    position: relative;
+    animation: chickenAni 3s ease infinite alternate;
+}
+@keyframes chickenAni{
+    from{left: 0;bottom: 0;}
+    to{left: 0;bottom: 100px;}
+}
+
+.step_2Img .carImg{
+    height: 90px;
+    object-fit: contain;
+    position: relative;
+}
+.step_2Img>.carImg{
+    animation: carAni 4s ease-out  infinite;
+}
+.step_2Img>.carImg~.carImg{
+    animation: carAni 2s ease-out  infinite;
+}
+@keyframes carAni{
+    from{left: -50px;}
+    to{left: 100px;}
+}
+.step_3Img .carImg{
+    height: 120px;
+    object-fit: contain;
+    position: relative;
+    transform: rotateY(180deg);
+    animation: hitAni 2s ease infinite;
+}
+@keyframes hitAni{
+    from{left: 50px;}
+    to{left: -100px;}
+}
+.hint img{
+    height: 150px;
+}
+
+
+@media (min-width:1200px) {
+    .sideBar>div>div {
+        margin: 20px;
+    }
+    .sideBar {
+        height: 650px;
+        margin: 0 auto;
+    }
+}
+
+.col-xl-9, .col-xl-3 {
+    padding: 0;
+}
